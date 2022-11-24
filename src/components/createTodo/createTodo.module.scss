@@ -1,0 +1,59 @@
+.createTodo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #7c3a00;
+
+    input[type='text'] {
+        width: 100%;
+        height: 30px;
+        padding: 0 10px;
+        margin-bottom: 20px;
+        box-shadow: 0px 0px 5px 0 #adadad;
+    }
+
+    textarea {
+        width: 100%;
+        height: 80px;
+        padding: 10px;
+        margin-bottom: 20px;
+        box-shadow: 0px 0px 5px 0 #adadad;
+        resize: none;
+    }
+
+    .bottomBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .dateAndFile {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            input[type='date'] {
+                height: 30px;
+                padding: 0 10px;
+                margin-right: 20px;
+                box-shadow: 0px 0px 5px 0 #adadad;
+            }
+        }
+
+        button {
+            height: 30px;
+            padding: 0 10px;
+            background-color: #7c3a00;
+            box-shadow: 0px 0px 5px 0 #adadad;
+            color: #FFFFFF;
+            font-weight: bold;
+            transition: 0.5s;
+
+            &:hover {
+                background-color: #5c2b00;
+            }
+        }
+    }
+}
